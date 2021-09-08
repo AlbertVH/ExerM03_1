@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.textoCentro {
+    text-align: center;
+}
+
+.header1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #365e5a;
+}
+
+.header1 div {
+    background-color: #f35b5b;
+}
+
+.header2 {
+    background-color: #ed7745;
+}
+
+.header2 p {
+    background-color: #e2ed45;
+}
+
+.pad10 {
+    padding: 10px;
+}
+
+.header-p-1, .header-p-3 {
+    flex-basis: 17%;
+    text-align: center;
+    padding: 5px;
+}
+
+.header-p-2 {
+    flex-basis: 60%;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.main {
+    display: flex;
+    background-color: #000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.main-1 {
+    display: flex;
+    align-content: space-between;
+    background-color: #454381;
+    flex-wrap: wrap;
+    flex: 65%;
+    margin: 10px 5px 10px 10px;
+    justify-content: space-between;
+}
+
+.m1 {
+    display: flex;
+    flex: 0 0 50%;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.main-1 ul li {
+    background-color: teal;
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+.ultimo li {
+    background-color: skyblue !important;
+    width: 100%;
+    
+}
+
+.ultimo {
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+
+.main-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6638a;
+    flex-basis: 30%;
+    padding: 10px;
+    margin: 10px 10px 10px 5px;
+}
+
+.main-2 div {
+    background-color: #f5f54d;
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+.footer {
+    background-color: darkgreen;
+}
+
+.foot1 {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+    .main{
+        background-color: rgb(240, 255, 37);
+    }
+
+    .main-1, .main-2 {
+        flex-basis: 100%;
+    }
+
+    .main-1 {
+        margin: 10px 10px 5px 10px;
+    }
+
+    .main-2 {
+        margin: 5px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header1{
+        flex-basis: 100%;
+    }
+
+    .header-p-1, .header-p-2, .header-p-3{
+        flex-basis: 100%;
+    } 
+
+    .header-p-2{
+        margin: 10px 0 10px 0;
+    } 
+
+    .m1:first-child {
+        flex-basis: 100%;
+        padding-bottom: 0;
+    }
+
+    .m1:nth-child(2) {
+        flex-basis: 100%;
+        padding-top: 0;
+    }
+}
